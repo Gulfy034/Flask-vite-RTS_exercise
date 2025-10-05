@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macro called</title>
+</head>
+
+<body>
+    {% from 'macro.html' import inputstyle %}
+    <p>导入宏</p>
+    <p>{{inputstyle("here")}} checkme</p>
+</body>
+
+</html>

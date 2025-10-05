@@ -1,0 +1,61 @@
+#root {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  color-scheme: dark;
+  transition: all ease-in-out .35s;
+  display: block;
+}
+
+nav.nav {
+  margin: .1rem;
+  border: 1px #fff solid;
+}
+
+div.navContent {
+  border: 1px #fff solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.btnOne,
+button.btnTwo,
+button.btnThree,
+button.btnFour {
+  transition: all ease-in-out .15s;
+  border: 1px #000 solid;
+  margin: 5px;
+
+  &:hover {
+    border-color: #fff;
+  }
+
+  &:active {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+div.viewBox {
+  margin-top: 2vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 80vh;
+  border: 2px #fff solid;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+}
+
+div.loginPage, div.registerPage {
+  display: inline-table;
+
+}
+
+input.username, input[type=password] {
+  width: 250px;
+}

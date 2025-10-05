@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flash</title>
+</head>
+<body>
+    {% from 'macro.html' import inputstyle %}
+
+    {% for message in get_flashed_messages(category_filter=("info")) %}
+        <p class="message" style="color: blue;">{{message}}</p>
+        <!-- "message"来自python脚本的函数 flash("YES!", category="info"); ，所以message会是 "YES!" -->
+    {% endfor %}
+
+    <form action="" method="post">
+        <input type="hidden" name="key_value" value="True">
+        <p>{{inputstyle("message", value="发送message", type="submit")}}</p>
+    </form>
+</body>
+</html>

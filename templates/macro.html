@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos</title>
+</head>
+<body>
+    {% macro inputstyle(name, value="", type="checkbox") %}
+        <input style="color-scheme: dark;" name="{{name}}" value="{{value}}" type="{{type}}"/>
+    {% endmacro %}
+    <h4>选择你的语言</h4>
+    <p>{{inputstyle("Python")}}Python</p>
+    <p>{{inputstyle("CSharp")}}CSharp</p>
+    <p>{{inputstyle("JavaScript")}}JavaScript</p>
+    <p>{{inputstyle("Rust")}}Rust</p>
+    <p>{{inputstyle("C/Cpp")}}C/Cpp</p>
+    <p>{{inputstyle("submit", value="提交", type="submit")}}点击按钮以便提交</p>
+</body>
+</html>
